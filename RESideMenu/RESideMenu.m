@@ -275,7 +275,7 @@
         PFFile *imageFile = user[@"image_file"];
         url = imageFile.url;
     }
-    [self.backgroundImageView sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:nil];
+    [self.backgroundImageView sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"avatar_default"]];
 }
 
 #pragma mark -
