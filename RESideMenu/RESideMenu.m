@@ -259,7 +259,7 @@
     [self updateContentViewShadow];
     
     [self updateCurrentUserAvatar];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userAvatarUpdated:) name:kUserAvatarUpdatedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userAvatarUpdated:) name:kUserDataUpdatedNotification object:nil];
 }
 
 - (void)userAvatarUpdated:(NSNotification *)notification
