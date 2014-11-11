@@ -114,7 +114,7 @@
     _contentViewShadowOpacity = 0.4f;
     _contentViewShadowRadius = 8.0f;
     _contentViewInLandscapeOffsetCenterX = 30.f;
-    _contentViewInPortraitOffsetCenterX  = 82.f;
+    _contentViewInPortraitOffsetCenterX  = 81.f;
     _contentViewScaleValue = 0.8f;
     
     _leftMenuPaning = NO;
