@@ -276,6 +276,12 @@
         url = imageFile.url;
     }
     [self.backgroundImageView sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"avatar_default"]];
+    [self.backgroundImageView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [self.backgroundImageView addSubview:({
+        UIView *view = [[UIView alloc] initWithFrame:self.backgroundImageView.bounds];
+        view.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.5f];
+        view;
+    })];
 }
 
 #pragma mark -
