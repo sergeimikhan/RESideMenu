@@ -80,6 +80,7 @@
 - (void)presentRightMenuViewController;
 - (void)hideMenuViewController;
 - (void)hideMenuViewControllerWithCompletionBlock:(void(^)())block;
+- (void)hideMenuViewControllerAnimated:(BOOL)animated withCompletionBlock:(void(^)())block;
 - (void)setContentViewController:(UIViewController *)contentViewController animated:(BOOL)animated;
 
 @end

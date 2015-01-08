@@ -42,3 +42,23 @@ BOOL RESideMenuUIKitIsFlatMode(void)
     });
     return isUIKitFlatMode;
 }
+
+BOOL isiPhone4()
+{
+    return ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height == 480.0f);
+}
+
+BOOL isiPhone5()
+{
+    return ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height == 568.0f);
+}
+
+BOOL isiPhone6()
+{
+    return ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height == 667.0f);
+}
+
+BOOL isiPhone6Plus()
+{
+    return ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height == 736.0f);
+}

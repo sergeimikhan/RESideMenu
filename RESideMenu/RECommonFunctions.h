@@ -45,3 +45,7 @@ __VA_ARGS__ \
 #endif
 
 BOOL RESideMenuUIKitIsFlatMode(void);
+BOOL isiPhone4();
+BOOL isiPhone5();
+BOOL isiPhone6();
+BOOL isiPhone6Plus();

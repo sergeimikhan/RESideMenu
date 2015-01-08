@@ -114,7 +114,20 @@
     _contentViewShadowOpacity = 0.4f;
     _contentViewShadowRadius = 8.0f;
     _contentViewInLandscapeOffsetCenterX = 30.f;
-    _contentViewInPortraitOffsetCenterX  = 81.f;
+    
+    if (isiPhone4() || isiPhone5())
+    {
+        _contentViewInPortraitOffsetCenterX = 81.f;
+    }
+    else if (isiPhone6())
+    {
+        _contentViewInPortraitOffsetCenterX = 103.f;
+    }
+    else if (isiPhone6Plus())
+    {
+        _contentViewInPortraitOffsetCenterX = 119.f;
+    }
+    
     _contentViewScaleValue = 0.8f;
     
     _leftMenuPaning = NO;
