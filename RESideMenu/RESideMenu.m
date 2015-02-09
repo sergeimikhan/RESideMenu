@@ -212,7 +212,7 @@
         UIBluredImageView *imageView = [[UIBluredImageView alloc] initWithFrame:self.view.bounds];
         imageView.contentMode = UIViewContentModeScaleAspectFill;
         imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        UIView* overlay = [[UIView alloc] initWithFrame:self.view.bounds];
+        UIView *overlay = [[UIView alloc] initWithFrame:self.view.bounds];
         overlay.backgroundColor = [UIColor blackColor];
         overlay.alpha = 0.25;
         overlay.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
