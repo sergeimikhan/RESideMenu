@@ -104,6 +104,7 @@
     
     _bouncesHorizontally = YES;
     
+    _panGestureEnabledForRightMenu = NO;
     _panGestureEnabled = YES;
     _panFromEdge = YES;
     _panMinimumOpenThreshold = 60.0;
@@ -581,7 +582,7 @@
            if (navigationController.viewControllers.count > 1 && navigationController.interactivePopGestureRecognizer.enabled) {
                if (self.panFromEdge && [gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]] && !self.visible) {
                    CGPoint point = [touch locationInView:gestureRecognizer.view];
-                   if (point.x > self.view.frame.size.width - 20.0) {
+                   if (point.x > self.view.frame.size.width - 20.0 && self.panGestureEnabledForRightMenu) {
                        return YES;
                    } else {
                        return NO;
@@ -593,7 +594,7 @@
   
     if (self.panFromEdge && [gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]] && !self.visible) {
         CGPoint point = [touch locationInView:gestureRecognizer.view];
-        if (point.x < 20.0 || point.x > self.view.frame.size.width - 20.0) {
+        if (point.x < 20.0 || (point.x > self.view.frame.size.width - 20.0 && self.panGestureEnabledForRightMenu)) {
             return YES;
         } else {
             return NO;
